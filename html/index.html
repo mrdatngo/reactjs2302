@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ReactJS course" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, ReactJS" />
+    <meta name="author" content="Dat" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.w3schools.com/favicon.ico"
+    />
+    <title>Html</title>
+    <style>
+      a:link {
+        color: green;
+      }
+      a:hover {
+        color: red;
+      }
+      a:visited {
+        color: pink;
+      }
+      a:active {
+        color: yellow;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Showing tags</h3>
+    <div>
+      <p>Papagraph</p>
+      <br />
+      <br />
+      <br />
+      <hr />
+      <hr />
+      <h1>h &nbsp; &copy;1</h1>
+      <h2>h2</h2>
+      <h4>h4</h4>
+      <div class="">...</div>
+      <h6>h6</h6>
+      <hr />
+    </div>
+
+    <h3 id="format-tags">format tags</h3>
+    <div>
+      Pytago: a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+      <br />
+      Water: H<sub>2</sub>O
+      <br />
+      <b> Thẻ b (bold) make this text bold </b>
+      <br />
+      <strong>
+        Thẻ <span style="color: red">strong</span> make this text bold (mang cả
+        về mặt nghĩa nhấn mạnh)
+      </strong>
+      <br />
+      <i> Thẻ i (italic) make this text italic </i>
+      <br />
+      <em>
+        Thẻ em (emphasize - nhấn mạnh) make this text italic (mang cả về mặt
+        nghĩa nhấn mạnh)
+      </em>
+      <del> Thẻ small make this text is deleted </del>
+      <small> Thẻ small make this text small </small>
+      <mark> Thẻ small make this text is marked </mark>
+      <ins> Thẻ ins (inserted) make this text is inserted </ins>
+    </div>
+
+    <!-- block and inline -->
+    <div>div</div>
+    <span>sp1</span>
+    <span>sp2</span>
+
+    <!-- Image - src - source -->
+    <!-- External -->
+    <!-- <img
+      src="https://i1-vnexpress.vnecdn.net/2023/02/13/cuchtchNXBGiodcVitNam-16762869-2219-7709-1676287073.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=3ZecUYvThW89gqJczCQM6w"
+    /> -->
+
+    <!-- Internal -->
+    <img
+      width="200"
+      height="200"
+      src="../img/vnexpress.jpg"
+      alt="vnexpress.jpg"
+    />
+    <img
+      width="200"
+      height="200"
+      src="/html/img/vnexpress.jpg"
+      alt="vnexpress.jpg"
+    />
+    <!-- <img src="http://127.0.0.1:5500/html/vnexpress.jpg" alt="" /> -->
+
+    <!-- link -->
+    <a target="_blank" href="http://google.com">Go to Google</a>
+
+    <a id="go-to-about" href="/html/src/about.html">Go to About</a>
+
+    <!-- List(order, unorder), table -->
+    <ol type="i">
+      <li>li1</li>
+      <li>li2</li>
+      <li>li3</li>
+    </ol>
+    <ul style="list-style-type: circle">
+      <li>li1</li>
+      <li>li2</li>
+      <li>
+        li3
+        <ol type="i">
+          <li>li1</li>
+          <li>li2</li>
+          <li>li3</li>
+        </ol>
+      </li>
+    </ul>
+    <!-- table -->
+    <table>
+      <thead>
+        <tr>
+          <!--  table row -->
+          <td rowspan="2">STT</td>
+          <td colspan="2">Info</td>
+        </tr>
+        <tr>
+          <th>Name</th>
+          <th>Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Nam</td>
+          <td>abc.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Ngoc</td>
+          <td>ngoc.com</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Nhan</td>
+          <td>nhan.it</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+    <!-- layouts -->
+    <!-- html5 -->
+    <header>Header</header>
+    <section>
+      <article>
+        <h3>Title</h3>
+        <p>description</p>
+      </article>
+      <article>
+        <h3>Title</h3>
+        <p>description</p>
+      </article>
+    </section>
+    <footer>Footer</footer>
+    <!-- before html5 -->
+    <div class="header"></div>
+    <div class="body"></div>
+    <div class="footer"></div>
+
+    <!-- form -->
+    <hr />
+    <h3>Forms</h3>
+    <!-- action usually use for 'server rendering' -->
+    <form action="/login" method="GET">
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" placeholder="Email" type="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          id="password"
+          name="password"
+          placeholder="password"
+          type="password"
+        />
+      </div>
+      <div>
+        <label for="from">From</label>
+        <select name="from" id="from">
+          <optgroup label="Domestic">
+            <option value="HCM1">HCM</option>
+            <option value="HCM2">HCM</option>
+            <option value="HN">HN</option>
+            <option value="DN">DN</option>
+          </optgroup>
+          <optgroup label="Internation">
+            <option value="KLIA">KLIA</option>
+          </optgroup>
+        </select>
+      </div>
+      <div>
+        <span>Gender</span>
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" value="male" />
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender" value="female" />
+      </div>
+      <div>
+        <input id="agreement" type="checkbox" />
+        <label for="agreement"
+          >Do you a agree with our policy about .....</label
+        >
+      </div>
+      <div>
+        <textarea name="des" id="des" cols="30" rows="10"></textarea>
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+
+    <!-- iframe -->
+    <!-- <iframe
+      width="100%"
+      src="https://vnexpress.net/cuu-chu-tich-nha-xuat-ban-giao-duc-viet-nam-bi-bat-4570166.html"
+      frameborder="0"
+    ></iframe> -->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/2lixpAax7S4"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+
+    <!-- not popular -->
+    <audio src=""></audio>
+    <video src=""></video>
+    <canvas></canvas>
+  </body>
+</html>

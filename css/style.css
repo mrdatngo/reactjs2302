@@ -1,3 +1,92 @@
+/* Specificity */
 p {
+  color: orange;
+}
+
+.description {
+  border: 1px solid black;
+}
+
+#first-para {
+  border: 1px solid black;
+}
+
+p.description {
   font-weight: bold;
+}
+
+/* selectors */
+.sm-block {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.sub-parent {
+  border: 1px solid black;
+}
+
+.parent .child {
+  background-color: bisque;
+  margin: 10px;
+}
+
+article > .des {
+  color: green;
+}
+
+p,
+div,
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+/* 
+h3 {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+} */
+/* 
+#first-para + .description {
+  font-size: 30px;
+} */
+
+#first-para ~ .description {
+  font-size: 30px;
+}
+
+.first-span {
+  background-color: blueviolet;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+p[handsome='very'] {
+  background-color: brown;
+}
+
+.parent .child:first-of-type {
+  color: blueviolet;
+}
+/* .parent .child:nth-child(2) {
+  color: blueviolet;
+} */
+
+/* .parent .child:nth-last-of-type(2) {
+  color: blueviolet;
+  font-weight: bold;
+} */
+
+input:focus {
+  width: 500px;
+}
+
+p.sample::first-letter {
+  color: #0a270a;
+}
+
+p.sample::first-line {
+  color: red;
 }

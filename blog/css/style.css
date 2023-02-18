@@ -1,0 +1,47 @@
+/* reset browser */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  background-color: antiquewhite;
+}
+
+section.main {
+  background-color: burlywood;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header .logo-img {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+.header .logo-img img {
+  width: 30px;
+}
+
+.header .user-wrapper {
+  margin: 10px;
+}
+
+/* menu */
+.menu .menu-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu .menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu .menu-item:hover {
+  background-color: burlywood;
+}

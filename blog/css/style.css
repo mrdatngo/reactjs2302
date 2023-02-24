@@ -10,7 +10,7 @@ footer {
 }
 
 section.main {
-  background-color: burlywood;
+  background-color: yellow;
 }
 
 .header {
@@ -44,4 +44,36 @@ section.main {
 
 .menu .menu-item:hover {
   background-color: burlywood;
+}
+
+/* sub-menu */
+
+.menu .menu-item {
+  position: relative;
+}
+
+.menu .menu-item .sub-menu {
+  display: none;
+  position: absolute;
+  left: 0px;
+  top: 32px;
+}
+
+/* noted */
+.menu .menu-item:hover .sub-menu {
+  display: block;
+}
+/* style for sub-menu */
+.menu .menu-item .sub-menu {
+  background-color: burlywood;
+  width: 200px;
+  list-style-type: none;
+}
+
+.menu .menu-item .sub-menu .sub-menu-item a {
+  display: inline-block;
+  padding: 10px;
+}
+.menu .menu-item .sub-menu .sub-menu-item:hover {
+  background-color: antiquewhite;
 }

@@ -90,3 +90,28 @@ p.sample::first-letter {
 p.sample::first-line {
   color: red;
 }
+
+/* first child & first of type */
+.container :first-child {
+  color: red;
+}
+
+.container :nth-child(3) {
+  color: green;
+}
+
+.container :nth-last-child(3) {
+  color: blue;
+}
+
+/* .container p:first-of-type {
+  color: red;
+} */
+
+/* .container p:last-child {
+  color: yellow;
+} */
+
+/* .container p:last-of-type {
+  color: yellow;
+} */

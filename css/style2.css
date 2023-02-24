@@ -1,0 +1,49 @@
+.oldest {
+  background-color: black;
+}
+.grand-parent {
+  width: 500px;
+  height: 500px;
+  background-color: antiquewhite;
+  margin: 30px;
+}
+
+.parent {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+}
+
+.uncle {
+  width: 250px;
+  height: 250px;
+  background-color: aquamarine;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+/* position */
+/* .parent {
+  position: relative;
+  top: 300px;
+  left: 200px;
+} */
+
+/* .grand-parent {
+  position: relative;
+}
+
+.parent {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+} */
+
+.parent {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}

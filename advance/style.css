@@ -1,0 +1,54 @@
+.block {
+  border: 1px solid black;
+  background-color: antiquewhite;
+  width: 100px;
+  height: 200px;
+  margin-top: 300px;
+  margin-left: 300px;
+}
+
+.block:hover {
+  /* transform: translate(500px, 200px); */
+  /* transform: scale(2, 2); */
+  /* transform: rotate(45deg); */
+  /* transform: rotate(0.7855rad);  */ /* 2PI <=> 360  */
+  transform: translate(500px, 200px) scale(2, 2) rotate(45deg);
+}
+
+.block {
+  transition: transform 1s;
+}
+
+.input-email {
+  width: 200px;
+  transition: width 1s ease-in-out;
+}
+
+.input-email:focus {
+  width: 400px;
+}
+
+.animation-block {
+  width: 50px;
+  height: 50px;
+  background-color: bisque;
+}
+
+@keyframes go-square {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  25% {
+    transform: translate(0px, -200px);
+  }
+  50% {
+    transform: translate(200px, -200px);
+  }
+  75% {
+    transform: translate(200px, 0px);
+  }
+}
+
+.animation-block {
+  animation: go-square 4s ease-in-out 0s infinite;
+}

@@ -1,0 +1,12 @@
+#ball-container {
+  width: 400px;
+  height: 400px;
+  background-color: #444;
+}
+
+#ball {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 100%;
+}

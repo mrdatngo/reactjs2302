@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[class^='cal'] {
+  min-height: 50px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cal-container {
+  /* border: 1px solid black; */
+  width: 300px;
+}
+
+.cal-container {
+  display: grid;
+  grid-template-areas:
+    'screen screen screen'
+    'num num operator'
+    'num num pointer'
+    'zero equal equal';
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.cal-screen-wrapper {
+  grid-area: screen;
+}
+
+.cal-nums-wrapper {
+  grid-area: num;
+}
+
+.cal-operators-wrapper {
+  grid-area: operator;
+}
+
+.cal-pointer-wrapper {
+  grid-area: pointer;
+}
+
+.cal-zero-wrapper {
+  grid-area: zero;
+}
+
+.cal-equal-wrapper {
+  grid-area: equal;
+}
+
+.cal-nums-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cal-nums-wrapper .cal-btn {
+  width: 33.33%;
+}
+
+.cal-operators-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cal-operators-wrapper .cal-operator {
+  width: 50%;
+}
+
+.cal-pointer-wrapper .cal-pointer {
+  width: 100%;
+}
+
+.cal-zero-wrapper .cal-btn {
+  width: 100%;
+}
+
+.cal-equal-wrapper .cal-equal {
+  width: 100%;
+}
+
+.cal-screen-wrapper input {
+  width: 100%;
+}
+
+.cal-screen-wrapper .cal-result {
+  text-align: right;
+}

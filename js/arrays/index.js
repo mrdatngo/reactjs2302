@@ -276,3 +276,32 @@ const check = listNumber.every((item) => {
 console.log(check);
 
 // sort => homework => giang vao hom sau
+
+const uNumbers = [2, 4, 2, 52, 325, 3];
+const oNumbers = uNumbers.sort((number1, number2) => {
+  return number2 - number1;
+});
+console.log(uNumbers, oNumbers);
+
+const students = [
+  {
+    name: 'A',
+  },
+  {
+    name: 'C',
+  },
+  {
+    name: 'B',
+  },
+];
+
+students.sort((s1, s2) => {
+  if (s1.name > s2.name) {
+    return -1;
+  } else if (s1.name < s2.name) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(students.reverse());

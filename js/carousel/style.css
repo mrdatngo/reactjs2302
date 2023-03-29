@@ -1,0 +1,91 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+.container .slider-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.container .slider-container .image-wrapper .image-shower img {
+  width: 100%;
+}
+
+.image-wrapper .image-shower {
+  display: none;
+}
+
+.image-wrapper .image-shower.active {
+  display: block;
+}
+
+/* style for arrow */
+.image-wrapper {
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.image-wrapper .arrow-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+}
+
+.image-wrapper .arrow-wrapper .arrow-left {
+  display: inline-block;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+}
+
+.image-wrapper .arrow-wrapper .arrow-left:hover {
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.image-wrapper .arrow-wrapper .arrow-right {
+  display: inline-block;
+  padding: 30px;
+  position: absolute;
+  top: 30%;
+  right: 0px;
+}
+
+.image-wrapper .arrow-wrapper .arrow-right:hover {
+  background-color: black;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+/* animation for slide */
+.image-wrapper .image-shower.active-move-to-left {
+  transform: translate(-100%, 0);
+  transition: transform 0.5s;
+}
+
+.image-wrapper .image-shower.next-active-move-to-left {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: 100%;
+  top: 0;
+  animation: slide-to-left 0.5s ease 0s 1 forwards;
+}
+
+@keyframes slide-to-left {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

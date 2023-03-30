@@ -29,7 +29,7 @@
 /* style for arrow */
 .image-wrapper {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .image-wrapper .arrow-wrapper {
@@ -87,5 +87,28 @@
   }
   100% {
     transform: translate(-100%, 0);
+  }
+}
+
+.image-wrapper .image-shower.active-move-to-right {
+  transform: translate(100%, 0);
+  transition: transform 0.5s;
+}
+
+.image-wrapper .image-shower.next-active-move-to-right {
+  display: block;
+  position: absolute;
+  width: 100%;
+  left: -100%;
+  top: 0;
+  animation: slide-to-right 0.5s ease 0s 1 forwards;
+}
+
+@keyframes slide-to-right {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
   }
 }
